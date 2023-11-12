@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "autogen-playground"
+version = "0.1.0"
+description = "A playground project to learn about autogen"
+authors = ["Martin Gauthier <gauthiermartin86@gmail.com>"]
+readme = "README.md"
+packages = [{include = "autogen_playground"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyautogen = "^0.1.14"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.7.0"
+ruff = "^0.1.5"
+black = "^23.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
